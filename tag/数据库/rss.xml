@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>止雨</title>
+        <title>止雨 • Posts by &#34;数据库&#34; tag</title>
         <link>https://stoprain0.github.io.git</link>
         <description>我忘却了所有悲剧，所见皆是奇迹。</description>
         <language>zh-CN</language>
@@ -67,50 +67,6 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;hr&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://stoprain0.github.io.git/2021/09/19/2021-09-19/</guid>
-            <title>更换主题</title>
-            <link>https://stoprain0.github.io.git/2021/09/19/2021-09-19/</link>
-            <category>主题</category>
-            <category>Yume Shaka</category>
-            <pubDate>Sun, 19 Sep 2021 01:09:02 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;时间：2021/9/19&lt;/p&gt;
-&lt;ul class=&#34;task-list&#34;&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; checked=&#34;true&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_0&#34;&gt; 更换主题&lt;/label&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;继创建了自己的博客后，应用了比较出名的二次元主题&lt;em&gt;&lt;strong&gt;&lt;strong&gt; Yume Shoka&lt;/strong&gt;&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
-&lt;img data-src=&#34;https://img-blog.csdnimg.cn/3ee894585fee431aa31b1abb5feb33f8.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBATGluZ196aGl5dQ==,size_20,color_FFFFFF,t_70,g_se,x_16&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;主题地址&lt;/strong&gt;：&lt;br&gt;
-&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmJvb3Rjc3MuY29tL3RoZW1lcy8=&#34;&gt;https://hexo.bootcss.com/themes/&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/8746e179fc524aa5a99963046ee51ba7.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBATGluZ196aGl5dQ==,size_20,color_FFFFFF,t_70,g_se,x_16&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;主题应用说明：&lt;/strong&gt;&lt;br&gt;
-&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=&#34;&gt;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/5108ce4ab4f0418bbd6b1537b4771e10.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBATGluZ196aGl5dQ==,size_20,color_FFFFFF,t_70,g_se,x_16&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;br&gt;
-&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdG9wcmFpbjAuZ2l0aHViLmlvLw==&#34;&gt;我的博客&lt;/span&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;经过修改对应的配置文件达到个性化的效果图&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;暂时修改了头像图片，了解博文的修改和发布。以此博文记录我完善博客的过程，那么就到这里吧。&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://stoprain0.github.io.git/2021/09/16/hello-world/</guid>
-            <title>第一个文章</title>
-            <link>https://stoprain0.github.io.git/2021/09/16/hello-world/</link>
-            <category>博客</category>
-            <category>Hexo</category>
-            <pubDate>Thu, 16 Sep 2021 20:50:59 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;时间：2021/9/16&lt;/p&gt;
-&lt;ul class=&#34;task-list&#34;&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; checked=&#34;true&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_0&#34;&gt; 创建博客&lt;/label&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;成功通过 git 软件引用 Hexo 框架创建好博客。&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

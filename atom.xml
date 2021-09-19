@@ -3,11 +3,69 @@
     <id>https://stoprain0.github.io.git</id>
     <title>止雨</title>
     <link href="https://stoprain0.github.io.git" />
-    <updated>2021-09-18T17:09:02.142Z</updated>
+    <updated>2021-09-19T13:34:41.392Z</updated>
     <category term="主题" />
     <category term="Yume Shaka" />
     <category term="博客" />
     <category term="Hexo" />
+    <category term="数据库" />
+    <category term="SQL" />
+    <entry>
+        <id>https://stoprain0.github.io.git/2021/09/19/SQL1/</id>
+        <title>数据库原理及应用</title>
+        <link rel="alternate" href="https://stoprain0.github.io.git/2021/09/19/SQL1/"/>
+        <content type="html">&lt;h2 id=&#34;数据库基本操作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据库基本操作&#34;&gt;#&lt;/a&gt; 数据库基本操作&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;发现 SQL 语句对关键字不区分大小写，去了解一下发现&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;sql 语句大小写的问题：&lt;br&gt;
+关键字不区分大小写 例如 select ，from， 大小写均可&lt;/p&gt;
+&lt;p&gt;标识符区分大小写 例如 表名，列名 标识符如果不加双引号，默认是按大写执行 标识符如果加双引号，则是按原始大小写执行&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;SQL 语句的书写规范&lt;br&gt;
+所有表名，列名全部小写&lt;br&gt;
+关键字，内置函数名全部大写&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用 / 切换数据库：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;USE&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;数据库名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;创建表的基本语法：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;TABLE&lt;/span&gt; 表名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     列名&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;  数据类型&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     列名&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;  数据类型&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol&gt;
+&lt;li&gt;指定字段名为主键&lt;strong&gt; PRIMARY KEY&lt;/strong&gt;：&lt;/li&gt;
+&lt;li&gt;指定数据自动增长&lt;strong&gt; IDENTITY (1，1)&lt;/strong&gt;&lt;br&gt;
+ 第一个参数代表初始值，第二个参数代表增长数。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NOT NULL&lt;/strong&gt; 则指定对应的值不能为空。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CHECK&lt;/strong&gt;(&lt;strong&gt;列名 =&#39; 值’&lt;strong&gt;OR&lt;/strong&gt; 列名 =‘值’&lt;/strong&gt;) 限定输入条件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DEFAULT (‘值’)&lt;/strong&gt; 设默认值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;字段名  数据类型  &lt;span class=&#34;token keyword&#34;&gt;PRIMARY&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;KEY&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;IDENTITY&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;，&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;建表时如果表名已经存在，则会发生冲突，这时我们可以在建表前加一个判断，然后去解决冲突。&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;IF&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;EXISTS&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;objects &lt;span class=&#34;token keyword&#34;&gt;WHERE&lt;/span&gt; name&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;表名&#39;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;AND&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;TYPE&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;U&#39;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;DROP&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;TABLE&lt;/span&gt; 表名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;–DROP TABLE 表名&lt;/strong&gt;  删除表（删表仅推荐在数据库入门时使用，因删表操作可能会导致数据丢失）&lt;br&gt;
+&lt;strong&gt;-TYPE=‘U’&lt;/strong&gt;     代表为用户自定义的表&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;数据类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据类型&#34;&gt;#&lt;/a&gt; 数据类型：&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;类型&lt;/th&gt;
+&lt;th&gt;数据类型举例&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Character&lt;/td&gt;
+&lt;td&gt;CHAR(n) , VARCHAR(n)&lt;/td&gt;
+&lt;td&gt;CHAR 固定长度，VARCHAR 可变长度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+</content>
+        <category term="数据库" />
+        <category term="SQL" />
+        <updated>2021-09-19T13:34:41.392Z</updated>
+    </entry>
     <entry>
         <id>https://stoprain0.github.io.git/2021/09/19/2021-09-19/</id>
         <title>更换主题</title>
