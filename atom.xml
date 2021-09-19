@@ -4,6 +4,10 @@
     <title>止雨</title>
     <link href="https://stoprain0.github.io.git" />
     <updated>2021-09-18T17:09:02.142Z</updated>
+    <category term="博客" />
+    <category term="Hexo" />
+    <category term="主题" />
+    <category term="Yume Shaka" />
     <entry>
         <id>https://stoprain0.github.io.git/2021/09/19/2021-09-19/</id>
         <title>更换主题</title>
@@ -30,6 +34,8 @@
 &lt;/blockquote&gt;
 &lt;p&gt;暂时修改了头像图片，了解博文的修改和发布。以此博文记录我完善博客的过程，那么就到这里吧。&lt;/p&gt;
 </content>
+        <category term="主题" />
+        <category term="Yume Shaka" />
         <updated>2021-09-18T17:09:02.142Z</updated>
     </entry>
     <entry>
@@ -37,11 +43,13 @@
         <title>第一个文章</title>
         <link rel="alternate" href="https://stoprain0.github.io.git/2021/09/16/hello-world/"/>
         <content type="html">&lt;p&gt;时间：2021/9/16&lt;/p&gt;
-&lt;p&gt;成功通过 git 软件引用 Hexo 框架创建好博客。&lt;/p&gt;
 &lt;ul class=&#34;task-list&#34;&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; checked=&#34;true&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_0&#34;&gt; 创建博客&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;成功通过 git 软件引用 Hexo 框架创建好博客。&lt;/p&gt;
 </content>
+        <category term="博客" />
+        <category term="Hexo" />
         <updated>2021-09-16T12:50:59.617Z</updated>
     </entry>
 </feed>
