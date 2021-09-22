@@ -6,10 +6,12 @@
     <updated>2021-09-16T12:50:59.617Z</updated>
     <category term="主题" />
     <category term="Yume Shaka" />
-    <category term="博客" />
-    <category term="Hexo" />
     <category term="数据库" />
     <category term="SQL" />
+    <category term="博客" />
+    <category term="Hexo" />
+    <category term="git学习" />
+    <category term="git命令语句" />
     <entry>
         <id>https://stoprain0.github.io.git/2021/09/16/hello-world/</id>
         <title>第一个文章</title>
