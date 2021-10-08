@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "止雨 • All posts by \"java系列\" category",
+    "description": "我忘却了所有悲剧，所见皆是奇迹。",
+    "home_page_url": "https://stoprain0.github.io.git",
+    "items": [
+        {
+            "id": "https://stoprain0.github.io.git/2021/09/22/java1/",
+            "url": "https://stoprain0.github.io.git/2021/09/22/java1/",
+            "title": "Java类型转换",
+            "date_published": "2021-09-22T15:55:32.426Z",
+            "content_html": "<h2 id=\"java类型转换\"><a class=\"markdownIt-Anchor\" href=\"#java类型转换\">#</a> Java 类型转换</h2>\n<hr>\n<ul>\n<li>强制类型转换：由高转低  如 int -&gt;byte</li>\n<li>自动类型转换 (隐式类型转换)：</li>\n</ul>\n<blockquote>\n<p>1. 不能对布尔值转换<br>\n 2. 不能把对象类型转换为不相干的类型<br>\n 3. 在把高容量转换到低容量时，需要强制类型转换<br>\n 4. 转换的时候可能存在内存溢出，或是精度问题</p>\n</blockquote>\n<p><img data-src=\"https://img-blog.csdnimg.cn/c7c1505ad6974cf781ffa4c49f6fb269.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBATGluZ196aGl5dQ==,size_20,color_FFFFFF,t_70,g_se,x_16\" alt=\"在这里插入图片描述\"><br>\n<img data-src=\"https://img-blog.csdnimg.cn/fdf37919e16242868c79d395af64dbf4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBATGluZ196aGl5dQ==,size_20,color_FFFFFF,t_70,g_se,x_16\" alt=\"在这里插入图片描述\"></p>\n<p><strong>Java 会把不同的类型先转换为同一类型再去计算，原理类似 C 语言中 int 与 float 类型做运算。</strong></p>\n<hr>\n<p>文章源自学习 B 站<span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMTJKNDExMzdodT9wPTI1JmFtcDtzcG1faWRfZnJvbT1wYWdlRHJpdmVy\">【狂神说 Java】Java 零基础学习视频通俗易懂</span></p>\n",
+            "tags": [
+                "Java"
+            ]
+        }
+    ]
+}

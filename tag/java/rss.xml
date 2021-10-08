@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>止雨 • Posts by &#34;java&#34; tag</title>
+        <link>https://stoprain0.github.io.git</link>
+        <description>我忘却了所有悲剧，所见皆是奇迹。</description>
+        <language>zh-CN</language>
+        <pubDate>Wed, 22 Sep 2021 23:55:32 +0800</pubDate>
+        <lastBuildDate>Wed, 22 Sep 2021 23:55:32 +0800</lastBuildDate>
+        <category>博客</category>
+        <category>Hexo</category>
+        <category>git学习</category>
+        <category>git命令语句</category>
+        <category>Java</category>
+        <category>主题</category>
+        <category>Yume Shaka</category>
+        <category>数据库</category>
+        <category>SQL</category>
+        <category>HTML</category>
+        <category>前端</category>
+        <item>
+            <guid isPermalink="true">https://stoprain0.github.io.git/2021/09/22/java1/</guid>
+            <title>Java类型转换</title>
+            <link>https://stoprain0.github.io.git/2021/09/22/java1/</link>
+            <category>Java</category>
+            <pubDate>Wed, 22 Sep 2021 23:55:32 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;java类型转换&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#java类型转换&#34;&gt;#&lt;/a&gt; Java 类型转换&lt;/h2&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;强制类型转换：由高转低  如 int -&amp;gt;byte&lt;/li&gt;
+&lt;li&gt;自动类型转换 (隐式类型转换)：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1. 不能对布尔值转换&lt;br&gt;
+ 2. 不能把对象类型转换为不相干的类型&lt;br&gt;
+ 3. 在把高容量转换到低容量时，需要强制类型转换&lt;br&gt;
+ 4. 转换的时候可能存在内存溢出，或是精度问题&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/c7c1505ad6974cf781ffa4c49f6fb269.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBATGluZ196aGl5dQ==,size_20,color_FFFFFF,t_70,g_se,x_16&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;br&gt;
+&lt;img data-src=&#34;https://img-blog.csdnimg.cn/fdf37919e16242868c79d395af64dbf4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBATGluZ196aGl5dQ==,size_20,color_FFFFFF,t_70,g_se,x_16&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Java 会把不同的类型先转换为同一类型再去计算，原理类似 C 语言中 int 与 float 类型做运算。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;文章源自学习 B 站&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMTJKNDExMzdodT9wPTI1JmFtcDtzcG1faWRfZnJvbT1wYWdlRHJpdmVy&#34;&gt;【狂神说 Java】Java 零基础学习视频通俗易懂&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

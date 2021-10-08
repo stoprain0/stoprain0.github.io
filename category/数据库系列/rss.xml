@@ -7,14 +7,17 @@
         <language>zh-CN</language>
         <pubDate>Sun, 19 Sep 2021 21:34:41 +0800</pubDate>
         <lastBuildDate>Sun, 19 Sep 2021 21:34:41 +0800</lastBuildDate>
-        <category>主题</category>
-        <category>Yume Shaka</category>
-        <category>数据库</category>
-        <category>SQL</category>
         <category>博客</category>
         <category>Hexo</category>
         <category>git学习</category>
         <category>git命令语句</category>
+        <category>Java</category>
+        <category>主题</category>
+        <category>Yume Shaka</category>
+        <category>数据库</category>
+        <category>SQL</category>
+        <category>HTML</category>
+        <category>前端</category>
         <item>
             <guid isPermalink="true">https://stoprain0.github.io.git/2021/09/19/SQL1/</guid>
             <title>数据库原理及应用</title>
@@ -29,23 +32,31 @@
 &lt;p&gt;sql 语句大小写的问题：&lt;br&gt;
 关键字不区分大小写 例如 select ，from， 大小写均可&lt;/p&gt;
 &lt;p&gt;标识符区分大小写 例如 表名，列名 标识符如果不加双引号，默认是按大写执行 标识符如果加双引号，则是按原始大小写执行&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;SQL 语句的书写规范&lt;br&gt;
 所有表名，列名全部小写&lt;br&gt;
 关键字，内置函数名全部大写&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;** 注释使用：**SQL 语句中的单行注释使用 –          -- 使用在语句后&lt;/p&gt;
+&lt;p&gt;SQL 语句中的多行注释采用 /*…*****/&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;使用 / 切换数据库：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;USE&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;数据库名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;USE&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;数据库名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;img data-src=&#34;C:\Users\zhiyu\AppData\Roaming\Typora\typora-user-images\image-20210922183345034.png&#34; alt=&#34;image-20210922183345034&#34; style=&#34;zoom:80%;&#34; /&gt;
+&lt;ul&gt;
 &lt;li&gt;创建表的基本语法：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;TABLE&lt;/span&gt; 表名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     列名&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;  数据类型&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     列名&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;  数据类型&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;TABLE&lt;/span&gt; 表名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     列名&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;  数据类型&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     列名&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;  数据类型&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;img data-src=&#34;C:\Users\zhiyu\AppData\Roaming\Typora\typora-user-images\image-20210922183916101.png&#34; alt=&#34;image-20210922183916101&#34; style=&#34;zoom:100%;&#34; /&gt;
+&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5Czhiyu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210922184000953.png&#34; alt=&#34;image-20210922184000953&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
 &lt;li&gt;指定字段名为主键&lt;strong&gt; PRIMARY KEY&lt;/strong&gt;：&lt;/li&gt;
 &lt;li&gt;指定数据自动增长&lt;strong&gt; IDENTITY (1，1)&lt;/strong&gt;&lt;br&gt;
  第一个参数代表初始值，第二个参数代表增长数。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;NOT NULL&lt;/strong&gt; 则指定对应的值不能为空。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;CHECK&lt;/strong&gt;(&lt;strong&gt;列名 =&#39; 值’&lt;strong&gt;OR&lt;/strong&gt; 列名 =‘值’&lt;/strong&gt;) 限定输入条件&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;DEFAULT (‘值’)&lt;/strong&gt; 设默认值&lt;/li&gt;
+&lt;li&gt;&lt;img data-src=&#34;C:%5CUsers%5Czhiyu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210922184606804.png&#34; alt=&#34;image-20210922184606804&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;字段名  数据类型  &lt;span class=&#34;token keyword&#34;&gt;PRIMARY&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;KEY&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;IDENTITY&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;，&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;建表时如果表名已经存在，则会发生冲突，这时我们可以在建表前加一个判断，然后去解决冲突。&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;IF&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;EXISTS&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;objects &lt;span class=&#34;token keyword&#34;&gt;WHERE&lt;/span&gt; name&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;表名&#39;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;AND&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;TYPE&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;U&#39;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;DROP&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;TABLE&lt;/span&gt; 表名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;–DROP TABLE 表名&lt;/strong&gt;  删除表（删表仅推荐在数据库入门时使用，因删表操作可能会导致数据丢失）&lt;br&gt;

@@ -76,7 +76,7 @@ Yume Shoka = 止雨</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>611</span>
+    <span>664</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -117,12 +117,12 @@ Yume Shoka = 止雨</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyonbf9j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
         </ul>
       </div>
     </header>
@@ -175,23 +175,31 @@ Yume Shoka = 止雨</title>
 <p>sql 语句大小写的问题：<br>
 关键字不区分大小写 例如 select ，from， 大小写均可</p>
 <p>标识符区分大小写 例如 表名，列名 标识符如果不加双引号，默认是按大写执行 标识符如果加双引号，则是按原始大小写执行</p>
-</blockquote>
 <p><strong>SQL 语句的书写规范<br>
 所有表名，列名全部小写<br>
 关键字，内置函数名全部大写</strong></p>
+</blockquote>
+<blockquote>
+<p>** 注释使用：**SQL 语句中的单行注释使用 –          -- 使用在语句后</p>
+<p>SQL 语句中的多行注释采用 /*…*****/</p>
+</blockquote>
 <ul>
 <li>使用 / 切换数据库：</li>
 </ul>
-<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">USE</span><span class="token operator">+</span>数据库名称</pre></td></tr></table></figure><ul>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">USE</span><span class="token operator">+</span>数据库名称</pre></td></tr></table></figure><img data-src="C:\Users\zhiyu\AppData\Roaming\Typora\typora-user-images\image-20210922183345034.png" alt="image-20210922183345034" style="zoom:80%;" />
+<ul>
 <li>创建表的基本语法：</li>
 </ul>
-<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> 表名</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token punctuation">(</span></pre></td></tr><tr><td data-num="3"></td><td><pre>     列名<span class="token number">1</span>  数据类型<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>     列名<span class="token number">2</span>  数据类型</pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token punctuation">)</span></pre></td></tr></table></figure><ol>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> 表名</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token punctuation">(</span></pre></td></tr><tr><td data-num="3"></td><td><pre>     列名<span class="token number">1</span>  数据类型<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>     列名<span class="token number">2</span>  数据类型</pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token punctuation">)</span></pre></td></tr></table></figure><img data-src="C:\Users\zhiyu\AppData\Roaming\Typora\typora-user-images\image-20210922183916101.png" alt="image-20210922183916101" style="zoom:100%;" />
+<p><img data-src="C:%5CUsers%5Czhiyu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210922184000953.png" alt="image-20210922184000953"></p>
+<ol>
 <li>指定字段名为主键<strong> PRIMARY KEY</strong>：</li>
 <li>指定数据自动增长<strong> IDENTITY (1，1)</strong><br>
  第一个参数代表初始值，第二个参数代表增长数。</li>
 <li><strong>NOT NULL</strong> 则指定对应的值不能为空。</li>
 <li><strong>CHECK</strong>(<strong>列名 =' 值’<strong>OR</strong> 列名 =‘值’</strong>) 限定输入条件</li>
 <li><strong>DEFAULT (‘值’)</strong> 设默认值</li>
+<li><img data-src="C:%5CUsers%5Czhiyu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210922184606804.png" alt="image-20210922184606804"></li>
 </ol>
 <figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre>字段名  数据类型  <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token keyword">IDENTITY</span><span class="token punctuation">(</span><span class="token number">1</span>，<span class="token number">1</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p>建表时如果表名已经存在，则会发生冲突，这时我们可以在建表前加一个判断，然后去解决冲突。</p>
 <figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">IF</span> <span class="token keyword">EXISTS</span><span class="token punctuation">(</span><span class="token keyword">SELECT</span><span class="token operator">*</span><span class="token keyword">FROM</span> sys<span class="token punctuation">.</span>objects <span class="token keyword">WHERE</span> name<span class="token operator">=</span><span class="token string">'表名'</span><span class="token operator">AND</span> <span class="token keyword">TYPE</span><span class="token operator">=</span><span class="token string">'U'</span> <span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> 表名</pre></td></tr></table></figure><p><strong>–DROP TABLE 表名</strong>  删除表（删表仅推荐在数据库入门时使用，因删表操作可能会导致数据丢失）<br>
@@ -230,7 +238,7 @@ Yume Shoka = 止雨</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2021-09-19 21:37:09" itemprop="dateModified" datetime="2021-09-19T21:37:09+08:00">2021-09-19</time>
+    <time title="修改时间：2021-09-22 18:51:59" itemprop="dateModified" datetime="2021-09-22T18:51:59+08:00">2021-09-22</time>
   </span>
   <span id="2021/09/19/SQL1/" class="item leancloud_visitors" data-flag-title="数据库原理及应用" title="阅读次数">
       <span class="icon">
@@ -283,7 +291,7 @@ Yume Shoka = 止雨</title>
     <div class="item left">
       
 
-  <a href="/2021/09/19/2021-09-19/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexbei4hj20zk0m8npd.jpg" title="更换主题">
+  <a href="/2021/09/19/%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeuibk9fj20zk0m8ay2.jpg" title="更换主题">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Hexo博客系列</span>
   <h3>更换主题</h3>
@@ -293,7 +301,7 @@ Yume Shoka = 止雨</title>
     <div class="item right">
       
 
-  <a href="/2021/09/20/about/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipew8gmvyj20zk0m87wh.jpg" title="未命名">
+  <a href="/2021/09/20/about/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeubcbajj20zk0m8h1h.jpg" title="未命名">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>未命名</h3>
@@ -333,19 +341,19 @@ Yume Shoka = 止雨</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">5</span>
+        <span class="count">7</span>
         <span class="name">文章</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">3</span>
+        <span class="count">5</span>
         <span class="name">分类</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">8</span>
+        <span class="count">11</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -406,7 +414,7 @@ Yume Shoka = 止雨</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/2021/09/19/2021-09-19/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+        <a href="/2021/09/19/%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
@@ -429,6 +437,45 @@ Yume Shoka = 止雨</title>
 <div class="rpost pjax">
   <h2>随机文章</h2>
   <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/09/20/about/" title="未命名">未命名</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="分类于 前端">前端</a>
+</div>
+
+    <span><a href="/2021/10/06/HTML/" title="HTML">HTML</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Hexo%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 Hexo博客系列">Hexo博客系列</a>
+</div>
+
+    <span><a href="/2021/09/19/%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/" title="更换主题">更换主题</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E7%B3%BB%E5%88%97/" title="分类于 Java系列">Java系列</a>
+</div>
+
+    <span><a href="/2021/09/22/java1/" title="Java类型转换">Java类型转换</a></span>
+  </li>
+
       
   <li class="item">
     
@@ -459,25 +506,6 @@ Yume Shoka = 止雨</title>
     <span><a href="/2021/09/19/SQL1/" title="数据库原理及应用">数据库原理及应用</a></span>
   </li>
 
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Hexo%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 Hexo博客系列">Hexo博客系列</a>
-</div>
-
-    <span><a href="/2021/09/19/2021-09-19/" title="更换主题">更换主题</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2021/09/20/about/" title="未命名">未命名</a></span>
-  </li>
-
   </ul>
 </div>
 <div>
@@ -500,13 +528,13 @@ Yume Shoka = 止雨</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">4k 字</span>
+    <span title="站点总字数">12k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">4 分钟</span>
+    <span title="站点阅读时长">11 分钟</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
